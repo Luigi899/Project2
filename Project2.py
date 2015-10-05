@@ -49,7 +49,10 @@ img = Image.open(ori_img)
 enc_img = "enc_" + ori_img
 
 #Message to encode into image
-msg = "Something"
+msg = str(input("Set message: "))
+
+#Set password
+mypassword = str(input('Set password : '))
 
 img_encoded = encode_message(img,msg)
 if img_encoded:
@@ -62,12 +65,14 @@ if img_encoded:
     os.startfile(enc_img)
     
     #Password Feature
-    mypassword = input('Set password : ')
     password =  input('Enter password : ')
     
-    while(password!=mypassword):
-        print("Wrong password!!")
+    while(password != mypassword):
+        print("Wrong password! ")
+        print("Try again. ")
         password =  input('Enter password : ')
-        
-    if(password==mypassword):
+
+    if(password == mypassword):
         print("Secret Message : " + msg)
+
+
