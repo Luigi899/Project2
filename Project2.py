@@ -69,5 +69,5 @@ if img_encoded:
         print("Wrong password!!")
         password =  input('Enter password : ')
         
-        if(password==mypassword):
-            print("Secret Message : " + msg)
+    if(password==mypassword):
+        print("Secret Message : " + msg)
