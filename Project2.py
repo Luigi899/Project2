@@ -1,9 +1,11 @@
-'''
-    STEGANOGRAPHY - Hiding messages in different types of media.
-    
-    This part of the program is the encoder.
-    It will encode our message into the image.
     '''
+    STEGANOGRAPHY - Hiding messages in different types of media.
+    '''
+
+'''
+This part of the program is the encoder.
+It will encode our message into the image.
+'''
 
 #Required module: PIL
 from PIL import Image
@@ -73,8 +75,8 @@ if img_encoded:
         print("Wrong password! ")
         print("Try again. ")
         password =  input('Enter password : ')
-
+    
     if(password == mypassword):
         print("Secret Message : " + msg)
-
+              
 
