@@ -1,4 +1,6 @@
 '''
+    STEGANOGRAPHY - Hiding messages in different types of media.
+    
     This part of the program is the encoder.
     It will encode our message into the image.
     '''
